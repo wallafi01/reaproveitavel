@@ -1,10 +1,8 @@
 name: Deploy Fake
 on:
     workflow_call:
-        inputs:
+        secrets:
             ambiente:
-                type: string
-                default: "desenvolvimento"
                 required: true
                 description: "Ambiente aonde será feito o deploy"
 jobs:
@@ -12,4 +10,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Deploy no ambiente
-              run: echo "Executando o deploy no ambiente de ${{ inputs.ambiente }}"    
+              run: echo "Executando o deploy no ambiente de ${{ secrets.ambiente }}"    
