@@ -15,4 +15,4 @@ jobs:
       needs: [CI] 
       uses: wallafi01/reaproveitavel/.github/workflows/cd.yaml@main
       with:
-        ambiente: ${{ secrets.AMBIENTE_ENTREGA}}
+        ambiente: ${{ secrets.AMBIENTE_ENTREGA }}
