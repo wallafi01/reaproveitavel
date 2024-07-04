@@ -13,5 +13,5 @@ jobs:
               run: echo "Publicação da Relase final"
     CD:
       needs: [CI] 
-      uses: wallafi01/reaproveitavel/.github/workflows/cd.yaml@main
+      uses: wallafi01/deploy/.github/workflows/deploy.yml@main
       secrets: inherit 
