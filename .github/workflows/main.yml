@@ -14,4 +14,5 @@ jobs:
     CD:
       needs: [CI] 
       uses: wallafi01/reaproveitavel/.github/workflows/cd.yaml@main
-      secrets: inherit
+      secrets:
+        ambiente: ${{ secrets.AMBIENTE_ENTREGA }}
